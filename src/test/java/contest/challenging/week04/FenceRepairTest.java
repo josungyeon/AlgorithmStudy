@@ -32,4 +32,12 @@ public class FenceRepairTest {
 		assertEquals(fenceRepair.getMinCost(N, L), 34);
 	}
 
+	@Test
+	public void solve3() throws Exception {
+		int N = 5;
+		int[] L = {3, 4, 5, 1, 2};
+
+		assertEquals(fenceRepair.getMinCost(N, L), 33);
+	}
+
 }
