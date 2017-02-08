@@ -5,7 +5,7 @@ package contest.challenging.week02;
  */
 public class CoinQuiz {
 
-	void solve() {
+	static void solve() {
 		int[] coin = {1, 5, 10, 50, 100, 500};
 		int[] coinCount = {3, 2, 1, 3, 0, 2};
 		int amount = 620;
@@ -32,11 +32,6 @@ public class CoinQuiz {
 		}
 
 		System.out.println(sum);
-	}
-
-	public static void main(String[] args) {
-		CoinQuiz coinQuiz = new CoinQuiz();
-		coinQuiz.solve();
 	}
 
 }
