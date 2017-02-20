@@ -48,17 +48,17 @@ public class KnapsackProblem {
 //		return res;
 //	}
 
-	int dfs3(int i, int j) {
-		int res;
+	int dfs3(int i, int W) {
+		int result;
 
 		if (i == n) {
-			res = 0;
-		} else if (j < weight[i]) {
-			res = dfs3(i + 1, j);
+			result = 0;
+		} else if (W < weight[i]) {
+			result = dfs3(i + 1, W);
 		} else {
-			res = Math.max(dfs3(i + 1, j), dfs3(i + 1, j - weight[i]) + value[i]);
+			result = Math.max(dfs3(i + 1, W), dfs3(i + 1, W - weight[i]) + value[i]);
 		}
 
-		return res;
+		return result;
 	}
 }

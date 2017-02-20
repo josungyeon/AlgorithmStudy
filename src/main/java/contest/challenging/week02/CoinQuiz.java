@@ -4,12 +4,17 @@ package contest.challenging.week02;
  * @author sungyeon.jo
  */
 public class CoinQuiz {
+	int[] coin;
+	int[] coinCount;
+	int amount;
 
-	static void solve() {
-		int[] coin = {1, 5, 10, 50, 100, 500};
-		int[] coinCount = {3, 2, 1, 3, 0, 2};
-		int amount = 620;
+	public CoinQuiz(int[] coin, int[] coinCount, int amount) {
+		this.coin = coin;
+		this.coinCount = coinCount;
+		this.amount = amount;
+	}
 
+	int solve() {
 		int sum = 0;
 		int change = amount;
 
@@ -32,6 +37,7 @@ public class CoinQuiz {
 		}
 
 		System.out.println(sum);
+		return sum;
 	}
 
 }

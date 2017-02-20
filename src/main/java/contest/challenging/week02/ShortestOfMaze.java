@@ -5,11 +5,9 @@ package contest.challenging.week02;
  * @author sungyeon.jo
  */
 public class ShortestOfMaze {
-	int N = 10;
-	int M = 10;
-	String[] lake = {"#", "S", "#", "#", "#", "#", "#", "#", ".", "#"
-	, ".", ".", ".", ".", ".", ".", "#", ".", ".", "#"
-	, ""
-	};
+
+	int getShortest(int N, int M, String[][] mazeMap) {
+		return 0;
+	}
 
 }
