@@ -1,9 +1,6 @@
 package kakao;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * (2018년)KAKAO BLIND RECRUITMENT 오픈채팅방
@@ -14,17 +11,8 @@ public class OpenChating {
     static final String USER_ACTION_ENTER = "Enter";
     static final String USER_ACTION_LEAVE = "Leave";
     static final String USER_ACTION_CHANGE = "Change";
-
-    public static void main(String[] args) {
-        String[] record = {"Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"};
-
-        OpenChating openChating = new OpenChating();
-        String[] result = openChating.solution(record);
-
-        for (String str: result) {
-            System.out.println(str);
-        }
-    }
+    static final String ENTER_MESSAGE = "%s님이 들어왔습니다.";
+    static final String LEAVE_MESSAGE = "%s님이 나갔습니다.";
 
     private Map<String, String> getUidMap(String[] record) {
         Map<String, String> uidMap = new HashMap<String, String>();
@@ -42,10 +30,11 @@ public class OpenChating {
 
     private String printResultByOne(String nickname, String type) {
         if (USER_ACTION_LEAVE.equals(type)) {
-            return nickname + "님이 나갔습니다.";
+            return String.format(ENTER_MESSAGE, nickname);
         } else if (USER_ACTION_ENTER.equals(type)) {
-            return nickname + "님이 들어왔습니다.";
+            return String.format(LEAVE_MESSAGE, nickname);
         }
+
         return null;
     }
 
