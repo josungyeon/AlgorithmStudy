@@ -21,7 +21,7 @@ public class CandidateKeyTest {
         };
 
         int actual = sut.solution(relation);
-        int expected = 0;
+        int expected = 2;
 
         assertEquals(expected, actual);
     }
