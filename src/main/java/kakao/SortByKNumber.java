@@ -21,7 +21,7 @@ public class SortByKNumber {
         return answer;
     }
 
-    private int getSortArray(int[] array, int first, int last, int num) {
+    private int getSortArray(int[] array, int first, int last, int targetIndex) {
         int[] newArray = new int[last - first + 1];
         int index = 0;
 
@@ -32,6 +32,6 @@ public class SortByKNumber {
 
         Arrays.sort(newArray);
 
-        return newArray[num];
+        return newArray[targetIndex];
     }
 }
