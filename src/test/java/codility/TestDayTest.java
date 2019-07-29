@@ -33,7 +33,7 @@ public class TestDayTest {
         a[6][1] = 1;
         a[6][2] = 1;
 
-        int result = TestDay.rectangularMapTest(a);
+        int result = TestDemo.rectangularMapTest(a);
         System.out.println("result = " + result);
         assertEquals(11, result);
     }
@@ -62,12 +62,12 @@ public class TestDayTest {
                 "Sat 01:00-23:00\n" +
                 "Sun 01:30-21:00\n";
 
-        System.out.println(TestDay.jamesScheduleTest(s));
+        System.out.println(JamesSchedule.jamesScheduleTest(s));
     }
 
     @Test
     public void testEvenMaxNum() {
-        TestDay.evenMaxNum();
+        TestDemo.evenMaxNum();
     }
 
     @Test
@@ -77,7 +77,7 @@ public class TestDayTest {
 //        int[] b = {-1, -3, -4 ,-5};
 //        int[] b = {0,0,0,0,0};
         int[] b = {-1, 2 ,1, 2, 0, 2, 1, -3, 4, 3, 0, -1};
-        int a = TestDay.maxArrayNumber(b);
+        int a = TestDemo.maxArrayNumber(b);
         System.out.println("testMaxArrayNumber = " + a);
     }
 
@@ -85,7 +85,7 @@ public class TestDayTest {
     public void testNTree() {
 //        int[] a = {1,2,3,4,5,6,6,7, 8};
         int[] a = {3,4,5,4};  // return 2
-        TestDay.nTree(a);
+        TestDemo.nTree(a);
     }
 
     @Test
@@ -93,7 +93,7 @@ public class TestDayTest {
 //        int[] a = new int[]{1,2,3};
         int[] a = new int[]{1,3,6,4,1,2};
 
-        int result =  TestDay.demo(a);
+        int result =  TestDemo.demo(a);
         System.out.println(result);
     }
 
@@ -104,8 +104,10 @@ public class TestDayTest {
 
     @Test
     public void test4444() {
-        int[] A = {5,2,4,6,3,7};
-        System.out.println(TestDay2.test4solution(A));
+//        int[] A = {5,2,4,6,3,7};
+        int[] A = {5,2,4,6,3};
+//        System.out.println(TestDay4.test4solution(A));
+        System.out.println(TestDay4.test4AnotherSolution(A));
     }
 
     @Test
