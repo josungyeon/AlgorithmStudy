@@ -6,19 +6,6 @@ import java.util.*;
  * Created by sungyeonjo on 2019. 7. 27..
  */
 public class TestDay2 {
-    public static int test4solution(int[] A) {
-        int minSum = A[1] + A[A.length - 2];
-        for (int i = 1; i < A.length - 3; i++) {
-            for (int j = i + 2; j < A.length - 1; j++) {
-                int sum = A[i] + A[j];
-                if (minSum > sum) {
-                    minSum = sum;
-                }
-            }
-        }
-        return minSum;
-    }
-
     public static int test2solution(int[] A) {
         int result = 1;
         String nextStatus;   //up, down, flat
