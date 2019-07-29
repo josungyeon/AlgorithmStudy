@@ -18,7 +18,6 @@ public class RunnerTest {
         String result = "leo";
 
         assertThat(result, is(sut.solution(participant, completion)));
-
     }
 
     @Test

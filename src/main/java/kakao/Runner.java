@@ -8,20 +8,17 @@ import java.util.*;
  */
 public class Runner {
     public String solution(String[] participant, String[] completion) {
-
-        List<String> completionList = Arrays.asList(completion);
         String answer = "";
+        Map<String, Integer> hashMap = new HashMap<>();
 
-        for (int i = 0; i < participant.length; i++) {
+        for (String player: participant) hashMap.put(player, hashMap.getOrDefault(player, 0) + 1);
+        for (String player: completion) hashMap.put(player, hashMap.get(player) -1);
 
-            if (!completionList.contains(participant[i])) {
-                answer = participant[i];
-
-            } else {
-                System.out.println(participant[i]);
+        for (String keySet : hashMap.keySet()) {
+            if (hashMap.get(keySet) != 0) {
+                answer = keySet;
             }
         }
-
         return answer;
     }
 }
