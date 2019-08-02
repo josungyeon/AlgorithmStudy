@@ -116,11 +116,11 @@ public class TestDayTest {
 //        int[] A = {-3, -3}; //1
 //        int[] A = {2, 4};   //2
         int[] A = {2,2,3};  //2
-        System.out.println(TestDay2.test2solution(A));
+        System.out.println(TestDay2.solution(A));
     }
 
     @Test
     public void test3() {
-        System.out.println(TestDay2.solution3("(())"));
+        System.out.println(TestDay3.solution("(())"));
     }
 }

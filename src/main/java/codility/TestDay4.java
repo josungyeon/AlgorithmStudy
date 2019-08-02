@@ -19,7 +19,7 @@ public class TestDay4 {
         return minSum;
     }
 
-    // after.. todo 성능 개선사항에 대해서 이야기해보기
+    // after.. 성능 조금 개선..
     public static int test4AnotherSolution(int[] A) {
         int minSum = A[1] + A[A.length - 2];
 
