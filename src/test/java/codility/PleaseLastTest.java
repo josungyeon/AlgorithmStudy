@@ -24,4 +24,9 @@ public class PleaseLastTest {
         assertEquals(PleaseLast.solution3(83643), "23h14m3s");
         assertEquals(PleaseLast.solution3(7500), "2h5m0s");
     }
+
+    @Test
+    public void test4() {
+        assertEquals(PleaseLast.solution4("011100"), 7);
+    }
 }

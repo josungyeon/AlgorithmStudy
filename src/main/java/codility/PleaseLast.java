@@ -76,4 +76,20 @@ public class PleaseLast {
 
         return stringBuilder.toString();
     }
+
+    public static int solution4(String s) {
+        int num = Integer.parseInt(s, 2);
+        int steps = 0;
+
+        while (num != 0) {
+            if (num % 2 == 0) {
+                num /= 2;
+            } else if (num % 2 != 0) {
+                num -= 1;
+            }
+            steps++;
+        }
+
+        return steps;
+    }
 }
