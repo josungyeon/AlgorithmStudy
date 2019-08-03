@@ -9,33 +9,33 @@ import static org.junit.Assert.*;
 public class PleaseLastTest {
     @Test
     public void test1() {
-        assertEquals(ReTestNum1.solution3(83643), "23h14m3s");
-        assertEquals(ReTestNum1.solution3(7500), "2h5m0s");
-        assertEquals(ReTestNum1.solution3(0), "0h0m0s");
-        assertEquals(ReTestNum1.solution3(86399), "23h59m59s");
+        assertEquals("23h14m3s", ReTestNum1.solution3(83643));
+        assertEquals("2h5m0s", ReTestNum1.solution3(7500));
+        assertEquals("0h0m0s", ReTestNum1.solution3(0));
+        assertEquals("23h59m59s", ReTestNum1.solution3(86399));
     }
 
     @Test
     public void test3() {
-        assertEquals(ReTestNum3.solution(new int[]{3,4,3,0,2,2,3,0,0}), 5);
-        assertEquals(ReTestNum3.solution(new int[]{4,4,3,3,1,0}), 3);
-        assertEquals(ReTestNum3.solution(new int[]{4, 2, 0}), 0);
-        assertEquals(ReTestNum3.solution(new int[]{1,2}), 1);
-        assertEquals(ReTestNum3.solution(new int[]{0,0,0,3,4,5,6}), 3);
+        assertEquals(5, ReTestNum3.solution(new int[]{3,4,3,0,2,2,3,0,0}));
+        assertEquals(3, ReTestNum3.solution(new int[]{4,4,3,3,1,0}));
+        assertEquals(0, ReTestNum3.solution(new int[]{4, 2, 0}));
+        assertEquals(1, ReTestNum3.solution(new int[]{1,2}));
+        assertEquals(3, ReTestNum3.solution(new int[]{0,0,0,3,4,5,6}));
         int[] array = new int[100000];
         for (int i = 0; i < array.length; i++) {
             array[i] = i;
         }
-        assertEquals(ReTestNum3.solution(array), 99999);
+        assertEquals(99999, ReTestNum3.solution(array));
     }
 
     @Test
     public void test4() {
-        assertEquals(ReTestNum4.solution(new int[]{}), 0);
-        assertEquals(ReTestNum4.solution(new int[]{1, 1}), 1);
-        assertEquals(ReTestNum4.solution(new int[]{-1000000000, -1000000000, -100000000, 1000000000}), 1);
-        assertEquals(ReTestNum4.solution(new int[]{1000000000, 1000000000, 1000000000, 1000000000}), 6);
-        assertEquals(ReTestNum4.solution(new int[]{3, 5, 6, 3, 3, 5}), 4);
+        assertEquals(0, ReTestNum4.solution(new int[]{}));
+        assertEquals(1, ReTestNum4.solution(new int[]{1, 1}));
+        assertEquals(1, ReTestNum4.solution(new int[]{-1000000000, -1000000000, -100000000, 1000000000}));
+        assertEquals(6, ReTestNum4.solution(new int[]{1000000000, 1000000000, 1000000000, 1000000000}));
+        assertEquals(4, ReTestNum4.solution(new int[]{3, 5, 6, 3, 3, 5}));
         int[] array = new int[1000000];
         for (int i = 0; i < array.length; i++) {
             array[i] = 1000;
@@ -45,8 +45,8 @@ public class PleaseLastTest {
 
     @Test
     public void test() {
-        assertEquals(PleaseLast.solution4("011100"), 7);
-        assertEquals(11, PleaseLast.solution4("10000000000"));
-        assertEquals(0, PleaseLast.solution4("0"));
+        assertEquals(7, PleaseLast.solution("011100"));
+        assertEquals(11, PleaseLast.solution("10000000000"));
+        assertEquals(0, PleaseLast.solution("0"));
     }
 }
