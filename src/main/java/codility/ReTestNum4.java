@@ -16,7 +16,6 @@ public class ReTestNum4 {
                 }
             }
 
-            // 아미친. 이거 안걸었어
             if (count >= 1000000000) {
                 count = 1000000000;
                 break;

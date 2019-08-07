@@ -9,10 +9,10 @@ import static org.junit.Assert.*;
 public class PleaseLastTest {
     @Test
     public void test1() {
-        assertEquals("23h14m3s", ReTestNum1.solution3(83643));
-        assertEquals("2h5m0s", ReTestNum1.solution3(7500));
-        assertEquals("0h0m0s", ReTestNum1.solution3(0));
-        assertEquals("23h59m59s", ReTestNum1.solution3(86399));
+        assertEquals("23h14m3s", ReTestNum1.solution(83643));
+        assertEquals("2h5m0s", ReTestNum1.solution(7500));
+        assertEquals("0h0m0s", ReTestNum1.solution(0));
+        assertEquals("23h59m59s", ReTestNum1.solution(86399));
     }
 
     @Test

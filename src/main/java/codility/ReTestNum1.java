@@ -10,9 +10,9 @@ public class ReTestNum1 {
     private static final int SECOND_PER_HOUR = 3600;
     private static final int SECOND_PER_MINUTE = 60;
 
-    public static String solution3(int T) {
+    public static String solution(int T) {
         int hour = T / SECOND_PER_HOUR;
-        int restMinute = T - (hour * SECOND_PER_HOUR);
+        int restMinute = T - (hour * SECOND_PER_HOUR);      // restMinute -> restSecond
         int minute = restMinute / SECOND_PER_MINUTE;
         int second = T % SECOND_PER_MINUTE;
 
