@@ -1,9 +1,12 @@
 package thread;
 
+import java.util.logging.Logger;
+
 /**
  * Created by sungyeonjo on 2019. 8. 20..
  */
 public class RunnableEx {
+//    Logger log = Logger
     public static void main(String[] args) {
         Thread thread = new Thread(() -> {
             for (int i = 0; i < 10; i++) {
